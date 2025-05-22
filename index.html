@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alfredo Capasso - CV</title>
+  <style>
+    body { font-family: sans-serif; margin: 2em; max-width: 900px; line-height: 1.6; }
+    nav { margin-bottom: 2em; }
+    button { margin-right: 1em; padding: 0.5em 1em; }
+    h1, h2 { margin-top: 1.5em; }
+    .lang { display: none; }
+    .lang.active { display: block; }
+  </style>
+</head>
+<body>
+  <nav>
+    <button onclick="setLang('en')">🇬🇧 English</button>
+    <button onclick="setLang('sv')">🇸🇪 Svenska</button>
+    <button onclick="setLang('it')">🇮🇹 Italiano</button>
+  </nav>
+
+  <!-- English Version -->
+  <section id="en" class="lang active">
+    <h1>Alfredo Capasso</h1>
+    <p><strong>Fullstack Developer | JavaScript, TypeScript, Node.js, React, Laravel | 10+ Years Experience | Remote-First Mindset</strong></p>
+
+    <h2>About</h2>
+    <p>I’m a seasoned Full Stack Developer with over a decade of hands-on experience building scalable web applications and APIs. My core stack includes JavaScript, TypeScript, React, Node.js, and PHP (Laravel), alongside relational databases like MySQL and PostgreSQL. I thrive in remote-first, cross-functional teams, and bring a strong focus on clean code, maintainability, and collaborative development.</p>
+
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>Lolo Company</strong> – Fullstack developer (Jan 2025 - Present, Remote)</li>
+      <li><strong>Paligo</strong> – Fullstack developer (Jan 2023 - Dec 2024, Remote)</li>
+      <li><strong>Fundler (now Levler)</strong> – Fullstack developer (Jan 2022 - Dec 2022, Hybrid)</li>
+      <li><strong>Neuroquant</strong> – Fullstack developer (Aug 2021 - Dec 2021, Remote)</li>
+      <li><strong>Viafree</strong> – Backend developer (Jan 2021 - Aug 2021, Remote)</li>
+      <li><strong>UC</strong> – Fullstack developer (Aug 2016 - Dec 2020, Hybrid)</li>
+      <li><strong>Baltic Spot</strong> – Fullstack developer (Aug 2013 - Jun 2016, Onsite)</li>
+      <li><strong>Nasdaq</strong> – Fullstack developer (Jun 2011 - Jun 2013, Onsite)</li>
+      <li><strong>Brollopsguiden</strong> – Fullstack developer (Jun 2009 - Jun 2011, Onsite)</li>
+    </ul>
+
+    <h2>Education</h2>
+    <p><strong>Stockholm University</strong> — Bachelor's Degree in Information Technology (Aug 2001 - Jun 2004)</p>
+
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> JavaScript, TypeScript, PHP, HTML, CSS, Ruby, Python, C#, Java</li>
+      <li><strong>Frameworks:</strong> React, Next.js, AngularJS, Vue.js, Express.js, Laravel, CodeIgniter, D3.js</li>
+      <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, Redis, ElasticSearch</li>
+      <li><strong>DevOps:</strong> AWS, Azure, Docker, Kubernetes, Terraform, GitHub/GitLab</li>
+      <li><strong>Testing:</strong> Mocha, Cypress, PHPUnit, Cucumber, Jest</li>
+      <li><strong>Tools:</strong> Kafka, Auth0, Vercel, Backstage, Figma, CI/CD pipelines</li>
+    </ul>
+
+    <h2>Languages</h2>
+    <p>Italian (native), Swedish (fluent), English (fluent), Spanish (basic)</p>
+
+    <h2>Hobbies & Interests</h2>
+    <p>Running, strength training, football, cinema, and exploring emerging technologies.</p>
+  </section>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+      localStorage.setItem('cv-lang', lang);
+    }
+    const savedLang = localStorage.getItem('cv-lang') || 'en';
+    setLang(savedLang);
+  </script>
+</body>
+</html>
