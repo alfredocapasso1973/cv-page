@@ -4,72 +4,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alfredo Capasso - CV</title>
-  <style>
-    body { font-family: sans-serif; margin: 2em; max-width: 900px; line-height: 1.6; }
-    nav { margin-bottom: 2em; }
-    button { margin-right: 1em; padding: 0.5em 1em; }
-    h1, h2 { margin-top: 1.5em; }
-    .lang { display: none; }
-    .lang.active { display: block; }
-  </style>
+  <title>Alfredo Capasso – CV</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <nav>
-    <button onclick="setLang('en')">🇬🇧 English</button>
-    <button onclick="setLang('sv')">🇸🇪 Svenska</button>
-    <button onclick="setLang('it')">🇮🇹 Italiano</button>
-  </nav>
+<body class="bg-gray-100 text-gray-800 leading-relaxed">
+  <div class="max-w-4xl mx-auto bg-white shadow-md rounded-lg overflow-hidden my-10 p-8">
+    <!-- Header with profile -->
+    <div class="text-center">
+      <img src="profile.png" alt="Alfredo Capasso" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-gray-300 shadow-sm object-cover" />
+      <h1 class="text-3xl font-bold">Alfredo Capasso</h1>
+      <p class="text-lg mt-2 text-gray-600">Fullstack Developer – JavaScript, TypeScript, Node.js, React, Laravel</p>
+      <p class="text-sm text-gray-500">Remote-first • 10+ years experience</p>
+    </div>
 
-  <!-- English Version -->
-  <section id="en" class="lang active">
-    <h1>Alfredo Capasso</h1>
-    <p><strong>Fullstack Developer | JavaScript, TypeScript, Node.js, React, Laravel | 10+ Years Experience | Remote-First Mindset</strong></p>
+    <!-- Contact -->
+    <div class="mt-6 border-t pt-4 text-center text-sm text-gray-500">
+      <p>Email: alfredocapasso73@gmail.com</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/alfredo-capasso" class="text-blue-600">alfredo-capasso</a></p>
+      <p>GitHub: <a href="https://github.com/alfredocapasso73" class="text-blue-600">alfredocapasso73</a></p>
+    </div>
 
-    <h2>About</h2>
-    <p>I’m a seasoned Full Stack Developer with over a decade of hands-on experience building scalable web applications and APIs. My core stack includes JavaScript, TypeScript, React, Node.js, and PHP (Laravel), alongside relational databases like MySQL and PostgreSQL. I thrive in remote-first, cross-functional teams, and bring a strong focus on clean code, maintainability, and collaborative development.</p>
+    <!-- About -->
+    <div class="mt-10">
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">About Me</h2>
+      <p>I’m a seasoned Full Stack Developer with over a decade of hands-on experience building scalable web applications and APIs. My core stack includes JavaScript, TypeScript, React, Node.js, and PHP (Laravel). I enjoy working in remote-first, cross-functional teams and value clean code, async communication, and pragmatic development.</p>
+    </div>
 
-    <h2>Experience</h2>
-    <ul>
-      <li><strong>Lolo Company</strong> – Fullstack developer (Jan 2025 - Present, Remote)</li>
-      <li><strong>Paligo</strong> – Fullstack developer (Jan 2023 - Dec 2024, Remote)</li>
-      <li><strong>Fundler (now Levler)</strong> – Fullstack developer (Jan 2022 - Dec 2022, Hybrid)</li>
-      <li><strong>Neuroquant</strong> – Fullstack developer (Aug 2021 - Dec 2021, Remote)</li>
-      <li><strong>Viafree</strong> – Backend developer (Jan 2021 - Aug 2021, Remote)</li>
-      <li><strong>UC</strong> – Fullstack developer (Aug 2016 - Dec 2020, Hybrid)</li>
-      <li><strong>Baltic Spot</strong> – Fullstack developer (Aug 2013 - Jun 2016, Onsite)</li>
-      <li><strong>Nasdaq</strong> – Fullstack developer (Jun 2011 - Jun 2013, Onsite)</li>
-      <li><strong>Brollopsguiden</strong> – Fullstack developer (Jun 2009 - Jun 2011, Onsite)</li>
-    </ul>
+    <!-- Experience -->
+    <div class="mt-10">
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Experience</h2>
+      <ul class="space-y-4">
+        <li>
+          <h3 class="font-bold">Lolo Company <span class="text-sm text-gray-500">— Jan 2025–Present (Remote)</span></h3>
+          <p>Built scalable microservices with Node.js, React, React Admin. Integrated AWS services and managed async workflows via Kafka.</p>
+        </li>
+        <li>
+          <h3 class="font-bold">Paligo <span class="text-sm text-gray-500">— Jan 2023–Dec 2024 (Remote)</span></h3>
+          <p>Laravel backend, Vue.js frontend. Docker + AWS + Mocha for testing in a SaaS environment.</p>
+        </li>
+        <li>
+          <h3 class="font-bold">Fundler / Levler <span class="text-sm text-gray-500">— Jan 2022–Dec 2022 (Hybrid)</span></h3>
+          <p>React + Laravel + Next.js + Auth0 + Tailwind in a modern architecture. Deployed on Vercel & Kubernetes.</p>
+        </li>
+        <li>
+          <h3 class="font-bold">Neuroquant <span class="text-sm text-gray-500">— Aug 2021–Dec 2021 (Remote)</span></h3>
+          <p>Node.js + React microservices, MongoDB, Docker, Cypress tests. AWS-based deployment.</p>
+        </li>
+        <li>
+          <h3 class="font-bold">UC / Tambur.se <span class="text-sm text-gray-500">— Aug 2016–Dec 2020 (Hybrid)</span></h3>
+          <p>Fullstack microservice development with AngularJS, React, Node.js. Deployed via Docker + Azure + Terraform.</p>
+        </li>
+      </ul>
+    </div>
 
-    <h2>Education</h2>
-    <p><strong>Stockholm University</strong> — Bachelor's Degree in Information Technology (Aug 2001 - Jun 2004)</p>
+    <!-- Education -->
+    <div class="mt-10">
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Education</h2>
+      <p><strong>Stockholm University</strong> — BSc in Information Technology (2001–2004)</p>
+    </div>
 
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Languages:</strong> JavaScript, TypeScript, PHP, HTML, CSS, Ruby, Python, C#, Java</li>
-      <li><strong>Frameworks:</strong> React, Next.js, AngularJS, Vue.js, Express.js, Laravel, CodeIgniter, D3.js</li>
-      <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, Redis, ElasticSearch</li>
-      <li><strong>DevOps:</strong> AWS, Azure, Docker, Kubernetes, Terraform, GitHub/GitLab</li>
-      <li><strong>Testing:</strong> Mocha, Cypress, PHPUnit, Cucumber, Jest</li>
-      <li><strong>Tools:</strong> Kafka, Auth0, Vercel, Backstage, Figma, CI/CD pipelines</li>
-    </ul>
+    <!-- Skills -->
+    <div class="mt-10">
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Skills</h2>
+      <ul class="columns-2 list-disc pl-5">
+        <li>JavaScript, TypeScript, PHP, Python</li>
+        <li>React, Next.js, AngularJS, Vue.js</li>
+        <li>Laravel, Express, CodeIgniter</li>
+        <li>MySQL, PostgreSQL, MongoDB</li>
+        <li>Docker, AWS, Kubernetes, Terraform</li>
+        <li>Cypress, Mocha, PHPUnit</li>
+        <li>Kafka, Auth0, CI/CD</li>
+      </ul>
+    </div>
 
-    <h2>Languages</h2>
-    <p>Italian (native), Swedish (fluent), English (fluent), Spanish (basic)</p>
-
-    <h2>Hobbies & Interests</h2>
-    <p>Running, strength training, football, cinema, and exploring emerging technologies.</p>
-  </section>
-
-  <script>
-    function setLang(lang) {
-      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
-      document.getElementById(lang).classList.add('active');
-      localStorage.setItem('cv-lang', lang);
-    }
-    const savedLang = localStorage.getItem('cv-lang') || 'en';
-    setLang(savedLang);
-  </script>
+    <!-- Languages -->
+    <div class="mt-10">
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Languages</h2>
+      <p>Italian (native), Swedish (fluent), English (fluent), Spanish (basic)</p>
+    </div>
+  </div>
 </body>
 </html>
