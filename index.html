@@ -9,6 +9,13 @@
 </head>
 <body class="bg-gray-100 text-gray-800 leading-relaxed">
   <div class="max-w-4xl mx-auto bg-white shadow-md rounded-lg overflow-hidden my-10 p-8">
+    <div class="flex justify-end mb-4">
+      <select onchange="setLang(this.value)" class="text-sm border border-gray-300 rounded px-2 py-1">
+        <option value="en">🇬🇧 English</option>
+        <option value="sv">🇸🇪 Svenska</option>
+        <option value="it">🇮🇹 Italiano</option>
+      </select>
+    </div>
     <!-- Header with profile -->
     <div class="text-center">
       <img src="profile.png" alt="Alfredo Capasso" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-gray-300 shadow-sm object-cover" />
